@@ -15,7 +15,7 @@
 */
 int main() {
 
-    printf("%sSubstitution Cipher\n", COLOR_YELLOW);
+    printf("%s\nSubstitution Cipher\n", COLOR_YELLOW);
     printf("%sBy Karl, Christian, and Paul%s\n", COLOR_GRAY, COLOR_RESET);
 
     // reserve the cipher of the needed length

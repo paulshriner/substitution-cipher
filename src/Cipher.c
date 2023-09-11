@@ -41,7 +41,7 @@ void PrintCipher(char * cipher, char start, char length) {
     char i;
     for(i = 0; i < length; i++) {
         printf("%s\'%s%c%s\'%s \u00BB %s\'%s%c%s\'%s      ", COLOR_GRAY, COLOR_RED, i + start, COLOR_GRAY, COLOR_RESET, COLOR_GRAY, COLOR_BLUE, cipher[i], COLOR_GRAY, COLOR_RESET);
-        if((i+1)%8 == 0) {
+        if((i+1)%5 == 0) {
             printf("\n"); 
         }
     }
