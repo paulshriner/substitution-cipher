@@ -1,3 +1,11 @@
+/*
+    Class: ECET 4640-002
+    Assignment: Lab Assignment 3
+    Authors: Christian Messmer, Karl Miller, Paul Shriner
+
+    Cipher.h: Function prototypes for Cipher.c
+*/
+
 #ifndef Cipher_h
 #define Cipher_h
 

@@ -1,3 +1,11 @@
+/*
+    Class: ECET 4640-002
+    Assignment: Lab Assignment 3
+    Authors: Christian Messmer, Karl Miller, Paul Shriner
+
+    FlexString.c: Functions for reading in a string.
+*/
+
 #include "FlexString.h"
 
 int FlexString_Read(char * * string, size_t * capacity, FILE * file) {

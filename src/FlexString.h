@@ -1,3 +1,11 @@
+/*
+    Class: ECET 4640-002
+    Assignment: Lab Assignment 3
+    Authors: Christian Messmer, Karl Miller, Paul Shriner
+
+    FlexString.h: Function prototypes for FlexString.c
+*/
+
 #ifndef FlexString_c
 #define FlexString_c
 
@@ -37,7 +45,6 @@ int FlexString_Read(char * * string, size_t * capacity, FILE * file);
     @attention Mutates: May reallocate and change value pointed to by string.
     @attention Mutates: May change value pointed to by capacity.
     @return The size of characters read, excluding the null-terminator and new-line (if present)
-
 */
 int FlexString(char * * string, size_t * capacity, FILE * file);
 

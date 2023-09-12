@@ -1,3 +1,11 @@
+/*
+    Class: ECET 4640-002
+    Assignment: Lab Assignment 3
+    Authors: Christian Messmer, Karl Miller, Paul Shriner
+
+    main.c: Entry point of the program.
+*/
+
 #include "FlexString.h"
 #include "Cipher.h"
 #include "colors.h"

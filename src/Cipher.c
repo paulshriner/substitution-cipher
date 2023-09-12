@@ -1,3 +1,11 @@
+/*
+    Class: ECET 4640-002
+    Assignment: Lab Assignment 3
+    Authors: Christian Messmer, Karl Miller, Paul Shriner
+
+    Cipher.c: Functions used for generating the cipher, printing it out, and encrypting a string.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
