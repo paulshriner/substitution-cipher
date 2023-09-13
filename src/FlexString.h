@@ -13,32 +13,31 @@
     FlexString is used to create a heap-allocated string that resizes as necessary for longer input strings.
 */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>  // for reading input
+#include <stdlib.h> // for memory allocation
 
 /**
     Fills a malloced string with input, reallocating if necessary.
 
     Called by FlexString
 
-    @param string A char * point to the string that will be populated.
+    @param string A char **; it points to the string that will be populated.
     @param capacity A pointer to the capacity desired of the string. If 0 or less, it will be set to 11.
-    Parameter file: A pointer to a file. Can be stdin if reading from the console.
+    @param file A pointer to a file. Can be stdin if reading from the console.
 
     @attention Precondition: String has already been malloced.
     @attention Mutates: May reallocate and change value pointed to by string.
     @attention Mutates: May change value pointed to by capacity.
-    @attention Returns: The size of characters read, excluding the null-terminator and new-line (if present)
     @return The number of characters read (not including new line, and null-terminator)
 */
-int FlexString_Read(char * * string, size_t * capacity, FILE * file);
+int FlexString_Read(char **string, size_t *capacity, FILE *file);
 
 /**
-    Creates and fills a malloced string. Then calls FlexString_Read to read from input, resizing as necessary.
+    @brief Creates and fills a malloced string. Then calls FlexString_Read to read from input, resizing as necessary.
 
     Called by main.
 
-    @param string A char * point to the string that will be populated.
+    @param string A pointer to a char*, referencing the string that will be populated.
     @param capacity A pointer to the capacity desired of the string. If 0 or less, it will be set to 11.
     @param file A pointer to a file. Can be stdin if reading from the console.
 
@@ -46,6 +45,6 @@ int FlexString_Read(char * * string, size_t * capacity, FILE * file);
     @attention Mutates: May change value pointed to by capacity.
     @return The size of characters read, excluding the null-terminator and new-line (if present)
 */
-int FlexString(char * * string, size_t * capacity, FILE * file);
+int FlexString(char **string, size_t *capacity, FILE *file);
 
-#endif 
+#endif
