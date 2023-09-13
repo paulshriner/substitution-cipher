@@ -9,52 +9,51 @@
 #ifndef Cipher_h
 #define Cipher_h
 
-
-
 /**
     @brief Generates a random cipher.
 
-    Used by: main
+    Modular, intended to be reusable.
 
-    @param cipher "The cipher to fill.
-    @param start - The character to start.
-    @param end - The character the cipher will end on (inclusive)
+    @details The array is first filled with the characters between start and end. Then the array is traversed. Each element is swapped with some random other element. Each element is swapped at least once.
+
+    @param cipher The cipher to fill.
+    @param start The character to start.
+    @param end The character the cipher will end on (inclusive).
 
     @attention Cipher is at least end-start in length.
     @attention Mutates: Fills cipher randomly with characters between start and end
 */
-void GenerateCipher(char * cipher, char start, char end);
-
+void GenerateCipher(char *cipher, char start, char end);
 
 /**
     @brief Prints the cipher.
 
-    Used by: main
-    Uses colors.
+    Modular, intended to be reusable.
+
+    @details Prints the cipher in a series of columns describing what each character will be transformed into.
+
+    Uses colors.h.
 
     @param cipher The cipher to print.
     @param start The character started on cipher
     @param length The length of the cipher
 */
-void PrintCipher(char * cipher, char start, char length);
-
-
+void PrintCipher(char *cipher, char start, char length);
 
 /**
     @brief Encrypts the given string
 
-    Anything out of bounds of the cipher will not be encrypted and will be preserved.
-    Used by main.
-    
+    Modular, intended to be reusable.
+
+    @details Replaces the string in place, mutating it. Anything out of bounds of the cipher will not be encrypted and will stay as its original character.
+
     @attention mutatates: encypts the string in place, destroying the original characters
-    @param string string to be encrypted, will be changed by the function
-    @param length length of the string to encript
-    @param cipher cipher to use for encrypting the string
-    @param start the first character the cipher uses
-    @param end the last character the ciper uses
+    @param string String to ecrypt.
+    @param length Length of `string`
+    @param cipher Cipher to use for encrypting the string. Must be (start-end)+1 in size.
+    @param start The first character the cipher uses
+    @param end The last character the ciper uses
 */
-void EncryptString(char* string, int length, char* cipher, char start, char end);
-
-
+void EncryptString(char *string, int length, char *cipher, char start, char end);
 
 #endif

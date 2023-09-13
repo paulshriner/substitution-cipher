@@ -10,6 +10,11 @@
 #define colors_h
 /*
     Karl's magic color macros.
+
+    These use Virtual Terminal escape sequences to trigger color changes on the console when printed.
+
+    See the [man page](https://www.man7.org/linux/man-pages/man4/console_codes.4.html) for more information.
+
 */
 #define COLOR_RED "\e[38;2;255;75;75m"
 #define COLOR_BLUE "\e[38;2;0;240;240m"
@@ -19,4 +24,4 @@
 #define COLOR_BOLD "\e[1m"
 #define COLOR_RESET "\e[0m"
 
-#endif 
+#endif
