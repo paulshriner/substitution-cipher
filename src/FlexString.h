@@ -1,3 +1,6 @@
+#ifndef FlexString_h
+#define FlexString_h
+
 /*
     Class: ECET 4640-002
     Assignment: Lab Assignment 3
@@ -5,9 +8,6 @@
 
     FlexString.h: Function prototypes for FlexString.c
 */
-
-#ifndef FlexString_c
-#define FlexString_c
 
 /*
     FlexString is used to create a heap-allocated string that resizes as necessary for longer input strings.

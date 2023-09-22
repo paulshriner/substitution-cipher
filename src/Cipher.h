@@ -1,3 +1,5 @@
+#ifndef Cipher_h
+#define Cipher_h
 /*
     Class: ECET 4640-002
     Assignment: Lab Assignment 3
@@ -5,9 +7,6 @@
 
     Cipher.h: Function prototypes for Cipher.c
 */
-
-#ifndef Cipher_h
-#define Cipher_h
 
 /**
     @brief Generates a random cipher.
